@@ -1,0 +1,13 @@
+public class presupuesto {
+    public static void main(String[] args) throws Exception {
+        Scanner lectura=new Scanner (System.in);
+        int ancho,alto,area,presupuesto;
+        System.out.println("Digite el ancho de la zona que desea enchapar:");
+        ancho=lectura.nextInt();
+        System.out.println("Digite el alto de la zona que desea enchapar:");
+        alto=lectura.nextInt();
+        area=ancho*alto;
+        presupuesto=area*45000;
+        System.out.println("Digite el ancho de la zona que desea enchapar:");
+    }
+}
