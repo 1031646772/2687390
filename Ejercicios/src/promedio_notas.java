@@ -13,10 +13,10 @@ public class promedio_notas {
        System.out.println("Ingrese el porcentaje de asistencia del estudiante");
        asistencia=lectura.nextDouble();
        if (promedio>=3.5 && asistencia>=70){
-        System.out.println("El estudiante aprobo");
+        System.out.println("Su promedio de notas fue "+promedio+" y su asistencia fue de "+asistencia+"%"+" usted aprobo");
        }
        else{
-        System.out.println("El estudiante reprobo");
+        System.out.println("Su promedio de notas fue "+promedio+" y su asistencia fue de "+asistencia+"%"+" usted no logro aprobar");
        }
     lectura.close();
 }
