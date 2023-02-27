@@ -1,37 +1,36 @@
 import java.util.Scanner;
-public class reto4{
+public class Challenge4{
     public static void main(String[] args) throws Exception {
-        int num= (int) (Math.random() *3+1);
-        String azar;
+        int number= (int) (Math.random() *3+1);
+        String rrandom;
         Scanner lectura=new Scanner (System.in);
         System.out.println("Elija entre piedra, papel o tijera");
-        azar=lectura.nextLine();
-        System.out.println(num);
-        if (azar.equals("piedra") && num==1){
+        rrandom=lectura.nextLine();
+        if (rrandom.equals("piedra") && number==1){
             System.out.println("Usted ha empatado piedra contra piedra");
         }
-        else if (azar.equals("papel") && num==2){
+        else if (rrandom.equals("papel") && number==2){
             System.out.println("Usted ha empatado papel contra papel");
         }
-        else if (azar.equals("tijera") && num==3){
+        else if (rrandom.equals("tijera") && number==3){
             System.out.println("Usted ha empatado tijera contra tijera");
         }
-        if (azar.equals("piedra") && num==3){
+        if (rrandom.equals("piedra") && number==3){
             System.out.println("Usted ha ganado al escoger piedra contra tijeras");
         }
-        else if (azar.equals("papel") && num==1){
+        else if (rrandom.equals("papel") && number==1){
             System.out.println("Usted ha ganado al escoger papel contra piedra");
         }
-        else if (azar.equals("tijera") && num==2){
+        else if (rrandom.equals("tijera") && number==2){
             System.out.println("Usted ha ganado al escoger tijera contra papel");
         } 
-        if (azar.equals("piedra") && num==2){
+        if (rrandom.equals("piedra") && number==2){
             System.out.println("Usted ha perdido al escoger piedra contra papel");
         }
-        else if (azar.equals("papel") && num==3){
+        else if (rrandom.equals("papel") && number==3){
             System.out.println("Usted ha perdido al esocger papel contra tijeras");
         }
-        else if (azar.equals("tijera") && num==1){
+        else if (rrandom.equals("tijera") && number==1){
             System.out.println("Usted ha perdido al escoger tijera contra piedra");
         }
  lectura.close();

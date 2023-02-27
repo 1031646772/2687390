@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Codificacion {
+public class Coding {
     public static void main(String[] args) throws Exception{
        int age;
        Scanner lectura=new Scanner (System.in);

@@ -1,15 +1,15 @@
 import java.util.Scanner;
-public class ciclos {
+public class Cycle {
     static Scanner entrada=new Scanner(System.in);
     public static void main(String[]arg)throws Exception {
-        int precio,cantidad,i;
+        int price,amount,i;
         for (i=1;i<=5;i++){
             System.out.println("Digite el precio del producto");
-            precio=entrada.nextInt();
+            price=entrada.nextInt();
             System.out.println("Digite la cantidad del producto");
-            cantidad=entrada.nextInt();
+            amount=entrada.nextInt();
             
-            System.out.println("el precio de su prodcuto es:"+precio+" y la cantidad es:"+cantidad); 
+            System.out.println("el precio de su prodcuto es:"+price+" y la cantidad es:"+amount); 
         }
             
     }

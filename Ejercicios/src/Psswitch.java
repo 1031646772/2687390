@@ -1,11 +1,11 @@
 import java.util.Scanner;
-public class pswitch {
+public class Psswitch {
     public static void main(String[] args) throws Exception {
        Scanner lectura=new Scanner (System.in);
-       String vocal;
+       String vowel;
        System.out.println("digite una vocal");
-       vocal=lectura.nextLine();
-       switch (vocal){
+       vowel=lectura.nextLine();
+       switch (vowel){
         case "A": 
         System.out.println("Usted eigio la vocal Aa");
         break;

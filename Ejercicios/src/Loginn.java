@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class login {
+public class Loginn {
     public static void main(String[] args) throws Exception{
        String user, password;
        Scanner lectura=new Scanner (System.in);

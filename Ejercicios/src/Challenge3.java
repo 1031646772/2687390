@@ -1,18 +1,18 @@
 import java.util.Scanner;
 import java.util.Random;
-public class Azar {
+public class Challenge3 {
     public static void main(String[] args) throws Exception{
-       boolean moneda;
-       String azar
+       boolean currency;
+       String rrandom;
        Scanner lectura=new Scanner (System.in);
        Random aleatorio=new Random();
        System.out.println("Elija cara o sello");
-       azar=lectura.nextLine();
-       moneda=aleatorio.nextBoolean();
-       if(moneda==true && azar.equals("cara")){
+       rrandom=lectura.nextLine();
+       currency=aleatorio.nextBoolean();
+       if(currency==true && rrandom.equals("cara")){
         System.out.println("Usted ha ganado al escoger cara");
        }
-       else if(moneda==false && azar.equals("sello")){
+       else if(currency==false && rrandom.equals("sello")){
         System.out.println("Usted ha ganado al esocger sello");
        }
        else{
