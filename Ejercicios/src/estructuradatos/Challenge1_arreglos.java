@@ -11,7 +11,15 @@ public class Challenge1_arreglos {
         for (int i=0;i<amountnote.length;i++){
             System.out.println("Digite la nota");
             amountnote [i]=lectura.nextDouble();
-            notas=notas+amountnote[i];
+            if (amountnote [i]>5.0 || amountnote[i]<=0.0){
+                System.out.println("No puedes digitar una nota mayor o menor al rango de calificacion");
+                System.out.println("Por favor vuelva a digitar la nota");
+                amountnote [i]=lectura.nextDouble();
+                notas=notas+amountnote[i];
+            }
+            else{
+                notas=notas+amountnote[i];
+            }
         }
         promedio=notas/numnotes;
         lectura.close();
