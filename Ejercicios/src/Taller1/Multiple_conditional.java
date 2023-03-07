@@ -1,3 +1,4 @@
+package Taller1;
 import java.util.Scanner;
 public class Multiple_conditional {
     public static void main(String[] args) throws Exception{

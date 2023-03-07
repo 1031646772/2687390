@@ -1,3 +1,4 @@
+package Taller1;
 import java.util.Scanner;
 public class Average_grades {
     public static void main(String[] args) throws Exception{

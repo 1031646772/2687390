@@ -1,3 +1,4 @@
+package Taller1;
 import java.util.Scanner;
 public class Challenge8{
     static Scanner entrada=new Scanner (System.in);

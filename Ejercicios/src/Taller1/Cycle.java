@@ -1,3 +1,4 @@
+package Taller1;
 import java.util.Scanner;
 public class Cycle {
     static Scanner entrada=new Scanner(System.in);

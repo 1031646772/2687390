@@ -1,3 +1,4 @@
+package Taller1;
 import java.util.Scanner;
 public class Exercise_while {
     public static void main(String[] args)throws Exception {

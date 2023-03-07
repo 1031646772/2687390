@@ -1,3 +1,4 @@
+package Taller1;
 import java.util.Scanner;
 public class Exercise_cycle_counter {
     static Scanner entrada=new Scanner(System.in);

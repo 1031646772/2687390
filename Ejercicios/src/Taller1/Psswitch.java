@@ -1,3 +1,4 @@
+package Taller1;
 import java.util.Scanner;
 public class Psswitch {
     public static void main(String[] args) throws Exception {

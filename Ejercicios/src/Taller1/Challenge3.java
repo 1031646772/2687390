@@ -1,3 +1,4 @@
+package Taller1;
 import java.util.Scanner;
 import java.util.Random;
 public class Challenge3 {
