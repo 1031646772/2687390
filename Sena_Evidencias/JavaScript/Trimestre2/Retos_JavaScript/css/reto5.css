@@ -1,0 +1,131 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border:0px;
+}
+:root{
+    --color1: rgb(18, 197, 155);
+    --background: rgba(4, 4, 4, 0.869);
+    --colorInput:rgb(0, 0, 0, 0);
+}
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    color: #fff;
+}
+.container_father{
+    margin-top: 12%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+.card{
+    margin-left:2%;
+    width:300px;
+    height: 300px;
+    background-color: var(--background);
+    border: 4px solid var(--color1);
+    border-radius: 5px;
+}
+.container_img{
+    width: 220px;
+    height: 180px;
+    border-radius: 5px;
+    margin-left: 8%;
+    margin-top: 5%;
+    border: 1px solid var(--color1);
+}
+.img{
+    width:220px;
+    height: 180px;
+    border: 5px;
+}
+input::placeholder{
+    color: #fff;
+    font-size: 16px;
+    font-family: sans-serif;
+    text-align: center;
+}
+input{
+    border: 3px solid var(--color1);
+    border-radius: 5px;
+    background-color: var(--colorInput);
+    color:#fff;
+    width: 350px;
+    height: 30px;  
+    margin: 2%;
+}
+input:focus{
+    border: none;
+    background-color:var(--colorInput);
+    color:#fff;
+}
+.boton{
+    position: relative;
+    margin-left: 5%;
+    background-color: var(--color1);
+    color: #fff;
+    border-radius: 5px ;
+    border: none;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.boton:hover{
+    width: 103px;
+    height: 43px;
+}
+.container_modal{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    left: 0px;
+    top: 0px;
+}
+.modal{
+    margin-left: 30%;
+    margin-top: 8%;
+    width: 400px;
+    height: 400px;
+    background-color:rgb(35, 35, 35);
+    border: 2px solid var(--color1);
+    border-radius: 5px;
+    animation-name: mover_arriba;
+    animation-duration: 0.5s;
+}
+.modal2{
+    margin-left: 30%;
+    margin-top: 8%;
+    width: 400px;
+    height: 220px;
+    background-color:rgb(35, 35, 35);
+    border: 2px solid var(--color1);
+    border-radius: 5px;
+    animation-name: mover_arriba;
+    animation-duration: 0.5s; 
+}
+@keyframes mover_arriba{
+    0%{
+    position: relative;
+     top: 200px;
+     opacity: 0.5;
+    }
+    50%{
+    position: relative;
+    }
+    100%{
+     top: 0px;
+    }
+}
+.boton2{
+    margin-left: 2%;
+    cursor: pointer;
+   background-color:rgb(35, 35, 35);
+}

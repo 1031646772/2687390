@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto5</title>
+    <link rel="stylesheet" href="../css/reto5.css">
+</head>
+<body>
+   <div class="container_father">
+    <section class="card">
+        <div class="container_img"><img src="circulo.png" class="img"></div>
+        <h1>Figura: Circulo</h1>
+        <button class="boton" id="boton1" onclick="mostrarmodal2()">Perimetro</button>
+        <button class="boton" id="boton2" onclick="mostrarmodal1()">Area</button>
+    </section>
+    <section class="card">
+        <div class="container_img"><img src="cuadrado.png" class="img"></div>
+        <h1>Figura: Cuadrado</h1>
+        <button class="boton" id="boton3" onclick="mostrarmodal4()">Perimetro</button>
+        <button class="boton" id="boton4" onclick="mostrarmodal3()">Area</button>
+    </section>
+    <section class="card">
+        <div class="container_img"><img src="triangulo.png" class="img"></div>
+        <h1>Figura: Triangulo</h1>
+        <button class="boton"id="boton5" onclick="mostrarmodal6()">Perimetro</button>
+        <button class="boton"id="boton6" onclick="mostrarmodal5()">Area</button>
+    </section>
+    <section class="card">
+        <div class="container_img"><img src="rectangulo.png" class="img"></div>
+        <h1>Figura: Rectangulo</h1>
+        <button class="boton" id="boton7" onclick="mostrarmodal8()">Perimetro</button>
+        <button class="boton" id="boton8" onclick="mostrarmodal7()">Area</button>
+    </section>
+   </div>
+   
+    <div class="container_modal"  id="modal_area_c">
+        <div class="modal2">
+            <button class="boton2" onclick="cerrar()"><h1>X</h1></button>
+            <h1>Calcular Area:</h1>
+            <form onsubmit="Areacir()">
+                <input type="number" placeholder="Digite el radio del circulo"id="radio_c">
+                <button class="boton" type="submit">Calcular</button>
+            </form>
+        </div>
+    </div>
+    <div class="container_modal"  id="modal_per_c">
+        <div class="modal2">
+            <button class="boton2" onclick="cerrar()"><h1>X</h1></button>
+            <h1>Calcular Perimetro:</h1>
+            <form onsubmit="percir()">
+                <input type="number" placeholder="Digite el diametro del circulo" id="diametro_c">
+                <button class="boton" type="submit">Calcular</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="container_modal"  id="modal_area_cu">
+        <div class="modal2">
+            <button class="boton2" onclick="cerrar()"><h1>X</h1></button>
+            <h1>Calcular Area:</h1>
+            <form onsubmit="areacua()">
+                <input type="number" placeholder="Digite el tamaño del lado del cuadrado" id="lado_cu">
+                <button class="boton" type="submit">Calcular</button>
+            </form>
+        </div>
+    </div>
+    <div class="container_modal"  id="modal_peri_cu">
+        <div class="modal2">
+            <button class="boton2" onclick="cerrar()"><h1>X</h1></button>
+            <h1>Calcular Perimetro:</h1>
+            <form onsubmit="percua()">
+                <input type="number" placeholder="Digite el tamaño del lado del cuadrado" id="lado2_cu">
+                <button class="boton" type="submit">Calcular</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="container_modal"  id="modal_area_tri">
+        <div class="modal2">
+            <button class="boton2" onclick="cerrar()"><h1>X</h1></button>
+            <h1>Calcular Area:</h1>
+            <form onsubmit="Areatri()">
+                <input type="number" placeholder="Digite el tamaño de la base del triangulo" id="lado_tri">
+                <input type="number" placeholder="Digite el tamaño de la altura del triangulo" id="lado2_tri">
+                <button class="boton" type="submit">Calcular</button>
+            </form>
+        </div>
+    </div>
+    <div class="container_modal"  id="modal_per_tri">
+        <div class="modal">
+            <button class="boton2" onclick="cerrar()"><h1>X</h1></button>
+            <h1>Calcular Perimetro:</h1>
+            <form onsubmit="Pertri()">
+                <input type="number" placeholder="Digite el tamaño del primer lado del triangulo" id="_lado">
+                <input type="number" placeholder="Digite el tamaño del segundo lado del triangulo" id="_lado2">
+                <input type="number" placeholder="Digite el tamaño del tercer lado del triangulo" id="_lado3">
+                <button class="boton" type="submit">Calcular</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="container_modal"  id="modal_area_rec">
+        <div class="modal2">
+            <button class="boton2" onclick="cerrar()"><h1>X</h1></button>
+            <h1>Calcular Area:</h1>
+            <form onsubmit="Arearec()">
+                <input type="number" placeholder="Digite el tamaño de la base del rectangulo" id="lado1_rec">
+                <input type="number" placeholder="Digite el tamaño de la altura del rectangulo" id="lado_rec">
+                <button class="boton" type="submit">Calcular</button>
+            </form>
+        </div>
+    </div>
+    <div class="container_modal"  id="modal_per_rec">
+        <div class="modal" onclick=>
+            <button class="boton2" onclick="cerrar()"><h1>X</h1></button>
+            <h1>Calcular Perimetro:</h1>
+            <form onsubmit="Perirect()">
+                <input type="number" placeholder="Digite el tamaño del primer lado del triangulo" id="_lado_rec">
+                <input type="number" placeholder="Digite el tamaño del segundo lado del triangulo" id="_lado2_rec">
+                <input type="number" placeholder="Digite el tamaño del tercer lado del triangulo" id="_lado3_rec">
+                <input type="number" placeholder="Digite el tamaño del tercer lado del triangulo" id="_lado4_rec">
+                <button class="boton" type="submit">Calcular</button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+<script src="../js/reto5.js"></script>
+</html>

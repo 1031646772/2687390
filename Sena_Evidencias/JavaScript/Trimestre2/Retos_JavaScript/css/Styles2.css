@@ -1,0 +1,73 @@
+*
+{
+    padding: 10px;
+    margin: 4px;
+    border: none;
+    font-family: sans-serif;
+}
+:root{
+    --color1: rgb(18, 197, 155);
+    --background: rgba(4, 4, 4, 0.869);
+    --colorInput:rgb(0, 0, 0, 0);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 300px;
+    background-color: var(--background);
+    color: #fff;
+    border: 3px solid var(--color1);
+    border-radius: 6px;
+}
+input::placeholder{
+    color: #fff;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+input{
+    border: 3px solid var(--color1);
+    border-radius: 5px;
+    background-color: var(--colorInput);
+    color:#fff;
+    width: 250px;
+}
+input:focus{
+    border: none;
+    background-color:var(--colorInput);
+    color:#fff;
+}
+select{
+    border: 3px solid var(--color1);
+    border-radius: 5px;
+    background-color: var(--colorInput);
+    color:#fff;
+    width: 277px;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+select option{
+    background-color: var(--background);
+    color: #fff;
+}
+select option:hover{
+    background-color: var(--color1);
+    color: #fff;
+}
+.boton{
+    margin: 5px;
+    background-color: var(--color1);
+    color: #fff;
+    border-radius: 5px ;
+    border: none;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.boton:hover{
+    width: 103px;
+    height: 43px;
+}
+
+

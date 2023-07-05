@@ -1,0 +1,7 @@
+model\conexion.class
+model\publicacion\publicacionDo.class
+model\publicacion\publicacionVo.class
+model\usuario\usuarioDo.class
+model\usuario\usuarioVo.class
+controller\publicacion.class
+controller\usuario.class

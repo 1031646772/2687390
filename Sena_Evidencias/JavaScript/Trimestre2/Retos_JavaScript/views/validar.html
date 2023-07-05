@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar</title>
+    <link rel="stylesheet" href="../css/validar.css">
+</head>
+<body>
+    <form id="formulario" class="form">
+        <h1>Formulario de registro</h1>
+        <br>
+        <label>Tipo de documento</label>
+        <select name="tipo" id="tipo">
+            <option value="0">Seleccione su tipo de documento</option>
+            <option value="1">Cedula ciudadana</option>
+            <option value="2">Tarjeta de identidad</option>
+            <option value="3">Pasaporte</option>
+        </select>
+        <div id="campoNum">
+            <label>No. Documento</label>
+            <br>
+            <input type="number" name="numeroDoc" id="numeroDoc">
+            <div class="feedback" id="feedback1"></div>
+        </div>
+        <div id="campoNombre">
+            <label >Nombre</label>
+            <br>
+            <input type="text" name="nombre" id="nombre">
+            <div class="feedback" id="feedback2"></div>
+        </div>
+        <div id="campoApellido">
+            <label >Apellido</label>
+            <br>
+            <input type="text" name="apellido" id="apellido">
+            <div class="feedback" id="feedback3"></div>
+        </div>
+        <div id="campoEmail">
+            <label >Email</label>
+            <br>
+            <input type="email" name="email" id="email">
+            <div class="feedback" id="feedback4"></div>
+        </div>
+        <div id="campoTelefono">
+            <label >Telefono</label>
+            <br>
+            <input type="number" name="telefono" id="telefono">
+            <div class="feedback" id="feedback5"></div>
+        </div>
+        <button type="submit" class="boton">Registrarme</button>
+    </form>
+</body>
+<script src="../js/validar.js"></script>
+</html>

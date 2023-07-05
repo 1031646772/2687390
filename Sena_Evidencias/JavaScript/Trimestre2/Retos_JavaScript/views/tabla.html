@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <th class="th1">Ejemplo</th>
+            <th >Ejemplo Aplicacion</th>
+        </tr>
+        <tr>
+            <td>Onclick</td>
+            <td>
+                <div class="container">
+                <button class="boton" onclick="mostrarText()">Aparecer texto</button>
+                <h1 id="text">HOLA BUENOS DIAS</h1>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Onsubmit</td>
+            <td>
+                <div>
+                    <form onsubmit="validarUsu()">
+                        <input type="email" placeholder="Correo" id="correo">
+                        <input type="password" placeholder="Contraseña" id="contra">
+                       <button class="boton" type="submit">Enviar</button> 
+                    </form>              
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Añadir tu evento</td>
+            <td>
+                <button class="boton" id="mostrar">Mostrar Imagen</button> 
+                <button class="boton" id="ocultar">Ocultar Imagen</button> 
+                <img src="https://educacion30.b-cdn.net/wp-content/uploads/2019/06/homer.gif" class="imagen" id="img">
+            </td>
+        </tr>
+        <tr>
+            <td>Onmouseover and Onmouseout</td>
+            <td>
+                <div class="container_text" id="text2"><p>Itachi es el papu mas papu de todos. Considerado el dios de los dioses, un miu apunto de evolucionar a un super sayayin face 37, macho pecho peludo,debido a que se gano el odio de muchos al principio pero al final se amo. Itachi esta muy roto, era capaz de partirle su madre a cualquiera. ¡MANGEKYOU SHARINGAN!</p></div>
+                <img src="https://aniyuki.com/wp-content/uploads/2021/12/aniyuki-itachi-if-28.gif" class="imagen2" id="img2" onmouseover="mostrarinfo()" onmouseout="ocultarinfo()">
+            </td>
+        </tr>
+    </table>
+</body>
+<script src="../js/eventos.js"></script>
+</html>
